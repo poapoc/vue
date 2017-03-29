@@ -1,0 +1,49 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue模版语法</title>
+	<style type="text/css">
+		.test {
+			width: 100px;
+			height: 200px;
+			margin: 0 auto;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+	
+
+	<div class="test" id="app">
+		<p>{{message | capitalize}}</p>
+		<div :id="id + 'id'" v-html="html"></div>
+		<div>{{num + 1}}{{Math.random()}}</div>
+
+		<p v-if="seen">see me</p>
+
+		<button id="btn">click me</button>
+	</div>
+
+	<script type="text/javascript" src="../lib/vue.js"></script>
+
+	<script type="text/javascript" src="../js/templateGrammar.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

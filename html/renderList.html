@@ -1,0 +1,41 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style type="text/css">
+		.test {
+			width: 100%;
+			height: 200px;
+			margin: 0 auto;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="test" id="app">
+		<div v-for="item in list">{{item}}</div>
+	</div>
+
+	<div id="objDiv">
+		<div v-for="item of obj">
+			<a v-bind:id="item.id" v-bind:href="item.url">{{item.msg}}</a>
+		</div>
+	</div>
+
+	<div v-for="n in 10"><span>{{n}}</span></div>
+
+	<script type="text/javascript" src="../lib/vue.js"></script>
+
+	<script type="text/javascript" src="../js/renderList.js"></script>
+
+</body>
+</html>
+
+
+
+
+

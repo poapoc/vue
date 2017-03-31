@@ -16,6 +16,10 @@
 </head>
 <body>
 
+	<div style="margin: 25px; ">
+		<input id="testInput">
+	</div>
+
 	<div class="test" id="app">
 		<div v-for="item in list">{{item}}</div>
 	</div>
@@ -24,9 +28,17 @@
 		<div v-for="item of obj">
 			<a v-bind:id="item.id" v-bind:href="item.url">{{item.msg}}</a>
 		</div>
+
+
+		<div v-for="n in 10">{{ n }}</div>
+
+		<button id="changeObj">changeObjValue</button>
+
+		<div v-for="num in evenNumbers">{{num}}</div>
+		<div v-for="num in even(numbers)">{{num}}</div>
 	</div>
 
-	<div v-for="n in 10"><span>{{n}}</span></div>
+
 
 	<script type="text/javascript" src="../lib/vue.js"></script>
 
